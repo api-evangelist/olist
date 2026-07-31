@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on olist.com and api.olist.com
+host: https://olist.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on the public olist.com
+  host. The Olist partner API (Swagger delivered on registration) sits behind
+  api.olist.com, which returns 403 to unauthenticated /.well-known/security.txt
+  requests. Absence recorded as valid data.

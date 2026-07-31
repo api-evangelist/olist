@@ -1,7 +1,29 @@
 aid: olist
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/olist.png
 name: Olist
-description: Olist is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Olist is a Brazilian commerce technology company headquartered in Curitiba,
+  Paraná, offering an integrated ecosystem of solutions that automate business
+  management for online sellers. Its products include an ERP for inventory,
+  invoicing and order automation, a multi-marketplace Integration Hub
+  (Mercado Livre, TikTok Shop and others), a POS for physical stores, a digital
+  account with Pix payments, shipping and fulfillment (Envios), and storefront
+  creation. Olist exposes robust partner APIs through its Technology Partner
+  program ("Parceiro Tecnológico"), where approved developers receive test
+  credentials and Swagger documentation to build and homologate integrations
+  reaching 60,000+ merchants. The public API surface is gated behind partner
+  registration; no open developer portal or OpenAPI specification is published.
 url: https://raw.githubusercontent.com/api-evangelist/olist/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- E-commerce
+- Marketplace
+- Payments
+- Logistics
+- ERP
+- Brazil
+- Commerce
+- Integration
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,27 @@ maintainers:
 common:
 - type: Website
   url: https://olist.com
+- type: DeveloperPortal
+  name: Technology Partner Program (Parceiro Tecnológico)
+  url: https://olist.com/programa-de-parceiros/parceiros-tech/
+- type: SignUp
+  name: Partner Platform Login
+  url: https://parceiros.olist.com/login
+- type: Support
+  name: Help Center (Central de Ajuda)
+  url: https://ajuda.olist.com/
+- type: Blog
+  url: https://olist.com/blog
+- type: Pricing
+  url: https://olist.com/precos/
+- type: GitHubOrganization
+  url: https://github.com/olist
+- type: WellKnown
+  url: well-known/olist-well-known.yml
+- type: DomainSecurity
+  url: security/olist-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
